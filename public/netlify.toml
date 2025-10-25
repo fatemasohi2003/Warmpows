@@ -1,0 +1,16 @@
+# Netlify Build Settings for a Vite/React Project
+
+[build]
+  # The command Netlify should run to generate the production build.
+  command = "npm run build"
+  
+  # The directory where Vite places the final static files.
+  publish = "dist"
+
+# Redirect rules to handle client-side routing (React Router)
+# This ensures that deep links (like /my-profile) or refreshes 
+# land on the index.html page instead of a 404 error.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
