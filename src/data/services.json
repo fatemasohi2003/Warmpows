@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold. Our expert fitters ensure the perfect size and style for your furry friend.",
+    "image": "/assets/img1.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo. Protect your pet's paws from harsh winter conditions.",
+    "image": "/assets/img2.jpeg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Indoor Pet Exercise Program",
+    "providerName": "ActivePaws Center",
+    "providerEmail": "contact@activepaws.com",
+    "price": 40,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Keep your pets active during winter with our supervised indoor exercise sessions. Perfect for days when it's too cold outside.",
+    "image": "../assets/img3.jpeg",
+    "category": "Exercise"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Nutritional Winter Diet Planning",
+    "providerName": "HealthyPet Nutrition",
+    "providerEmail": "nutrition@healthypet.com",
+    "price": 35,
+    "rating": 4.9,
+    "slotsAvailable": 6,
+    "description": "Custom winter diet plans to maintain your pet's health and energy levels during cold months. Includes meal prep guidance.",
+    "image": "../assets/img4.jpeg",
+    "category": "Nutrition"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Heated Pet Shelter Setup",
+    "providerName": "WarmNest Solutions",
+    "providerEmail": "info@warmnest.com",
+    "price": 50,
+    "rating": 4.8,
+    "slotsAvailable": 2,
+    "description": "Professional installation of heated shelters and warm bedding areas for outdoor pets. Ensure comfort and safety all winter long.",
+    "image": "../assets/img5.jpeg",
+    "category": "Shelter"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Winter Wellness Checkup",
+    "providerName": "VetCare Clinic",
+    "providerEmail": "appointments@vetcare.com",
+    "price": 45,
+    "rating": 5.0,
+    "slotsAvailable": 8,
+    "description": "Comprehensive health checkup focused on winter-related concerns like dry skin, joint stiffness, and cold sensitivity.",
+    "image": "../assets/img6.jpeg",
+    "category": "Healthcare"
+  }
+]
