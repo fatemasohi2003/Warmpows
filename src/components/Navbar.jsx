@@ -2,9 +2,8 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import toast from "react-hot-toast";
-// import { FaPaw } from "react-icons/fa"; // Removed external dependency
 
-// Paw Icon SVG (Replacement for FaPaw)
+
 const PawIcon = ({ className }) => (
   <svg 
     xmlns="http://www.w3.org/2000/svg" 
@@ -18,8 +17,7 @@ const PawIcon = ({ className }) => (
 
 
 const Navbar = () => {
-  // NOTE: If you still see the error "Could not resolve ../context/AuthContext", 
-  // please ensure that the AuthContext.jsx file exists in your src/context/ folder.
+ 
   const { user, logout } = useAuth();
 
   const handleLogout = () => {
@@ -44,7 +42,7 @@ const Navbar = () => {
           Services
         </NavLink>
       </li>
-      {/* My Profile লিঙ্কটি এখন শর্ত ছাড়াই সব সময় দেখানো হবে। */}
+      
       <li>
         <NavLink to="/my-profile" className={({ isActive }) => isActive ? "text-orange-500 font-bold" : ""}>
           My Profile
@@ -67,7 +65,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl flex items-center gap-2">
-          <PawIcon className="w-6 h-6 text-orange-500" /> {/* FaPaw replaced with PawIcon */}
+          <PawIcon className="w-6 h-6 text-orange-500" /> 
           <span className="font-bold">WarmPaws</span>
         </Link>
       </div>
@@ -80,7 +78,7 @@ const Navbar = () => {
             <div className="dropdown dropdown-end">
               <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
-                  {/* user.photoURL না থাকলে ডিফল্ট ছবি দেখাবে */}
+                 
                   <img alt={user.displayName || "User"} src={user.photoURL || "https://i.ibb.co/4pDNDk1/avatar.png"} />
                 </div>
               </div>
