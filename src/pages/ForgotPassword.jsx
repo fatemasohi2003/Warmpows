@@ -28,7 +28,7 @@ const ForgotPassword = () => {
       <div className="card w-full max-w-md shadow-2xl bg-base-100">
         <div className="card-body">
           <h2 className="text-3xl font-bold text-center mb-6">Forgot Password</h2>
-          <p className="text-center text-gray-600 mb-6">Enter your email address and we'll send you a link to reset your password.</p>
+          <p className="text-center text-gray-600 mb-6">Enter your email address and we will send you a link to reset your password.</p>
           <form onSubmit={handleSubmit}>
             <div className="form-control">
               <label className="label"><span className="label-text">Email</span></label>
