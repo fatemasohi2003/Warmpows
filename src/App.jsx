@@ -10,7 +10,7 @@ import ServiceDetails from "./pages/ServiceDetails.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
 import MyProfile from "./pages/MyProfile.jsx";
-import UpdateProfile from "./pages/UpdateProfile.jsx";
+import Updateprofile from "./pages/Updateprofile.jsx";
 import ForgotPassword from "./pages/ForgotPassword.jsx";
 import PrivateRoute from "./components/PrivateRoute.jsx";
 import "animate.css";
@@ -48,7 +48,7 @@ function App() {
                 path="/update-profile"
                 element={
                   <PrivateRoute>
-                    <UpdateProfile />
+                    <Updateprofile />
                   </PrivateRoute>
                 }
               />
