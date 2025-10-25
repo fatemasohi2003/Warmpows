@@ -11,10 +11,10 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase/firebase.config";
 
-// Create context
+
 const AuthContext = createContext();
 
-// Custom hook to use auth
+
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
@@ -23,38 +23,36 @@ export const useAuth = () => {
   return context;
 };
 
-// AuthProvider component
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const googleProvider = new GoogleAuthProvider();
 
-  // Sign up with email and password
+  
   const signUp = (email, password) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
-  // Login with email and password
   const login = (email, password) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  // Login with Google
+
   const loginWithGoogle = () => {
     setLoading(true);
     return signInWithPopup(auth, googleProvider);
   };
 
-  // Logout
+  
   const logout = () => {
     setLoading(true);
     return signOut(auth);
   };
 
-  // Update user profile
+  
   const updateUserProfile = (name, photo) => {
     return updateProfile(auth.currentUser, {
       displayName: name,
@@ -62,7 +60,7 @@ export const AuthProvider = ({ children }) => {
     });
   };
 
-  // Reset password
+  
   const resetPassword = (email) => {
     return sendPasswordResetEmail(auth, email);
   };
