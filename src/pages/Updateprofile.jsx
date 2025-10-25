@@ -28,18 +28,18 @@ const UpdateProfile = () => {
       <div className="max-w-md mx-auto">
         <div className="card bg-base-100 shadow-xl">
           <div className="card-body">
-            <h2 className="card-title text-3xl mb-6 text-center">Update Profile</h2>
+            <h2 className="card-title text-3xl mb-6 text-center">Update Profile </h2>
             <form onSubmit={handleSubmit}>
               <div className="form-control">
-                <label className="label"><span className="label-text">Name</span></label>
+                <label className="label"><span className="label-text">Name : </span></label>
                 <input type="text" name="name" placeholder="Enter your name" className="input input-bordered" value={formData.name} onChange={handleChange} required />
               </div>
               <div className="form-control mt-4">
-                <label className="label"><span className="label-text">Photo URL</span></label>
+                <label className="label"><span className="label-text">Photo URL :</span></label>
                 <input type="url" name="photoURL" placeholder="Enter photo URL" className="input input-bordered" value={formData.photoURL} onChange={handleChange} required />
               </div>
               <div className="form-control mt-6">
-                <button type="submit" className="btn btn-primary">Update Profile</button>
+                <button type="submit" className="btn btn-primary">Update Profile </button>
               </div>
               <div className="form-control mt-2">
                 <button type="button" onClick={() => navigate("/my-profile")} className="btn btn-outline">Cancel</button>
